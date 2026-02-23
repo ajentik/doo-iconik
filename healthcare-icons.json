@@ -1,0 +1,1260 @@
+{
+  "hospital": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3.1 21V7.1L12 2.9l8.9 4.2V21H3.1z",
+      "M3.1 21h17.8",
+      "M9 21v-6.1h6V21",
+      "M10.5 10h3",
+      "M12 8.5v3"
+    ],
+    "category": "healthcare"
+  },
+  "ambulance": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M1.2 14.1V8.2h13.9v9.9h-1.5",
+      "M15.1 14.1l3.1-3.2L21.8 14v4.1h-2.1",
+      "M6.1 20.2a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2z",
+      "M17.1 20.2a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2z",
+      "M8.2 18.1h6.8",
+      "M6 10.5h3",
+      "M7.5 9v3"
+    ],
+    "category": "healthcare"
+  },
+  "medical-chart": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M5.1 2.9h13.8c.6 0 1.1.5 1.1 1.1v16.9c0 .6-.5 1.1-1.1 1.1H5.1c-.6 0-1.1-.5-1.1-1.1V4c0-.6.5-1.1 1.1-1.1z",
+      "M8 7.1h8",
+      "M8 11.1h8",
+      "M8 15.1h5",
+      "M9.5 1v3.9",
+      "M14.5 1v3.9"
+    ],
+    "category": "healthcare"
+  },
+  "patient-bed": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 18v-5h20v5",
+      "M2 13V8.1c0-.6.4-1 1-1h5c.6 0 1 .4 1 1v4.9",
+      "M22 13V9.1c0-.6-.4-1-1-1H9",
+      "M2 18v2",
+      "M22 18v2",
+      "M5 8.1c1.2-.1 2.1-1.1 2.1-2.3S6.2 3.6 5 3.5c-1.2.1-2.1 1.1-2.1 2.3S3.8 8 5 8.1z"
+    ],
+    "category": "healthcare"
+  },
+  "iv-drip": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2v7",
+      "M8 2h8",
+      "M9 4.5h6v4.6H9V4.5z",
+      "M12 9.1v4",
+      "M10 13.1h4l-2 8.9-2-8.9z",
+      "M12 17v5"
+    ],
+    "category": "healthcare"
+  },
+  "blood-pressure": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M5 15.1a7 7 0 1 1 14 0 7 7 0 0 1-14 0z",
+      "M12 15.1V11",
+      "M12 15.1l3.5 2.1",
+      "M7 6.1C8.3 3.7 10 2.5 12 2.5s3.7 1.2 5 3.6",
+      "M9 8h6"
+    ],
+    "category": "healthcare"
+  },
+  "thermometer-alt": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M14 14.8V4.1a2 2 0 0 0-4 0v10.7a4 4 0 1 0 4 0z",
+      "M12 18a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z",
+      "M12 15V9",
+      "M16 7h2",
+      "M16 10h2"
+    ],
+    "category": "healthcare"
+  },
+  "x-ray": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 3.1h16c.6 0 1 .4 1 1v15.8c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V4.1c0-.6.4-1 1-1z",
+      "M12 6v12",
+      "M9 8h6",
+      "M8 11h8",
+      "M9 14h6",
+      "M10 17l2-3 2 3"
+    ],
+    "category": "healthcare"
+  },
+  "mri-scan": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4.1 6h15.8c.6 0 1.1.5 1.1 1.1v9.8c0 .6-.5 1.1-1.1 1.1H4.1c-.6 0-1.1-.5-1.1-1.1V7.1c0-.6.5-1.1 1.1-1.1z",
+      "M7 6v12",
+      "M17 6v12",
+      "M3 12h18",
+      "M10 9a2 2 0 1 1 4 0",
+      "M10 15a2 2 0 1 0 4 0"
+    ],
+    "category": "healthcare"
+  },
+  "ct-scan": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z",
+      "M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10z",
+      "M2 12h3",
+      "M19 12h3",
+      "M12 2v3",
+      "M12 19v3"
+    ],
+    "category": "healthcare"
+  },
+  "surgical-mask": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 8.5c0 0 2.5-1.5 10-1.5s10 1.5 10 1.5v4c0 3.3-4.5 6-10 6s-10-2.7-10-6V8.5z",
+      "M6 11.5h12",
+      "M6 14h12",
+      "M2 8.5L0.5 7",
+      "M22 8.5l1.5-1.5"
+    ],
+    "category": "healthcare"
+  },
+  "gloves": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M7 12V4.5c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5V10",
+      "M10 10V3c0-.8.7-1.5 1.5-1.5S13 2.2 13 3v7",
+      "M13 10V3.5c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5V10",
+      "M16 10V5.5c0-.8.7-1.5 1.5-1.5S19 4.7 19 5.5V14c0 3.3-2.7 6-6 6H11c-3.3 0-6-2.7-6-6v-2.5c0-.8.7-1.5 1.5-1.5S8 10.7 8 11.5",
+      "M5 15h14"
+    ],
+    "category": "healthcare"
+  },
+  "gown": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M8 2.5h8l2 5H6l2-5z",
+      "M6 7.5v13.5h12V7.5",
+      "M6 7.5L2.5 10",
+      "M18 7.5l3.5 2.5",
+      "M10 7.5v6",
+      "M14 7.5v6"
+    ],
+    "category": "healthcare"
+  },
+  "defibrillator": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4.5 4h15c.6 0 1 .4 1 1v14c0 .6-.4 1-1 1h-15c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1z",
+      "M7.5 12h2.5l1.5-3 2 6 1.5-3H17.5",
+      "M12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2z",
+      "M9 4v-2",
+      "M15 4v-2"
+    ],
+    "category": "healthcare"
+  },
+  "oxygen-tank": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M8 7c0-2.2 1.8-4 4-4s4 1.8 4 4v12c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2V7z",
+      "M10 3V1.5h4V3",
+      "M16 10h2.5c.6 0 1 .4 1 1v2c0 .6-.4 1-1 1H16",
+      "M10 10h-1",
+      "M10 14h-1"
+    ],
+    "category": "healthcare"
+  },
+  "ventilator": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 17h16v3H4v-3z",
+      "M6 10h5v7H6v-7z",
+      "M11 12h6",
+      "M17 9c0-1.7 1.3-3 3-3",
+      "M17 12h2",
+      "M8 6V10",
+      "M8 6c0-1.7 1.3-3 3-3",
+      "M7 13h2"
+    ],
+    "category": "healthcare"
+  },
+  "lab-coat": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M8 1.5l-1 3.5-4 2v14h18V7l-4-2-1-3.5H8z",
+      "M10 1.5v5",
+      "M14 1.5v5",
+      "M10 1.5c0 1.1.9 2 2 2s2-.9 2-2",
+      "M8.5 13h2",
+      "M8.5 16h2"
+    ],
+    "category": "healthcare"
+  },
+  "medical-bag": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3.5 9h17c.6 0 1 .4 1 1v10c0 .6-.4 1-1 1h-17c-.6 0-1-.4-1-1V10c0-.6.4-1 1-1z",
+      "M8 9V6c0-.6.4-1 1-1h6c.6 0 1 .4 1 1v3",
+      "M10.5 14h3",
+      "M12 12.5v3"
+    ],
+    "category": "healthcare"
+  },
+  "scalpel": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4.1 19.9l8.4-8.4",
+      "M12.5 11.5l5.5-8c.3-.5 1-.6 1.4-.2l1.3 1.3c.4.4.3 1.1-.2 1.4l-8 5.5",
+      "M4.1 19.9c-.4.4-1.1.4-1.5 0s-.4-1.1 0-1.5l2.5-2.5 1.5 1.5-2.5 2.5z"
+    ],
+    "category": "healthcare"
+  },
+  "bandage-alt": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3.5 8.5l12-5c.5-.2 1.1.1 1.3.6l4 10c.2.5-.1 1.1-.6 1.3l-12 5c-.5.2-1.1-.1-1.3-.6l-4-10c-.2-.5.1-1.1.6-1.3z",
+      "M10 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z",
+      "M14 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z",
+      "M12 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2z",
+      "M12 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+    ],
+    "category": "healthcare"
+  },
+  "crutch": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M9.5 1.5h5l-1 6h-3l-1-6z",
+      "M10.5 7.5h3",
+      "M12 7.5v5.5",
+      "M9 13h6",
+      "M10 13l-2.5 9.5",
+      "M14 13l2.5 9.5"
+    ],
+    "category": "healthcare"
+  },
+  "cast": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M7 4c0 0-1 0-1 3v10c0 3 1 3 1 3h10c0 0 1 0 1-3V7c0-3-1-3-1-3H7z",
+      "M7 8.5h10",
+      "M7 12h10",
+      "M7 15.5h10",
+      "M12 4v16"
+    ],
+    "category": "healthcare"
+  },
+  "splint": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M7.5 2v20",
+      "M16.5 2v20",
+      "M7.5 5h9",
+      "M7.5 9h9",
+      "M7.5 13h9",
+      "M7.5 17h9"
+    ],
+    "category": "healthcare"
+  },
+  "medical-record": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M6 2.5h12c.6 0 1 .4 1 1v17c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-17c0-.6.4-1 1-1z",
+      "M9 2.5v-1h6v1",
+      "M8 7h3",
+      "M8 10h8",
+      "M8 13h8",
+      "M8 16h5",
+      "M14.5 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+    ],
+    "category": "healthcare"
+  },
+  "discharge-form": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M6 2h12c.6 0 1 .4 1 1v18c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1z",
+      "M8 6h8",
+      "M8 9h8",
+      "M8 12h5",
+      "M14 15l2 2 4-4",
+      "M9 2V1",
+      "M15 2V1"
+    ],
+    "category": "healthcare"
+  },
+  "ai-brain": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2C8.7 2 6 4.7 6 8c0 1.5.5 2.8 1.4 3.9.3.4.6.8.6 1.3V15h8v-1.8c0-.5.3-.9.6-1.3C17.5 10.8 18 9.5 18 8c0-3.3-2.7-6-6-6z",
+      "M9 15v2c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2",
+      "M10 19v1.5",
+      "M14 19v1.5",
+      "M9 8.5c0-1.5 1.3-3 3-3s3 1.5 3 3",
+      "M9.5 11c.8.5 1.5.5 2.5.5s1.7 0 2.5-.5",
+      "M12 5.5v3",
+      "M3 8h2",
+      "M19 8h2",
+      "M5 4l1.5 1.5",
+      "M19 4l-1.5 1.5"
+    ],
+    "category": "healthcare"
+  },
+  "neural-network": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M4 22a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M12 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M12 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M20 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M20 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M20 22a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M6 4l4 4",
+      "M6 12h4",
+      "M6 20l4-4",
+      "M14 8l4-4",
+      "M14 8l4 4",
+      "M14 16l4-4",
+      "M14 16l4 4"
+    ],
+    "category": "healthcare"
+  },
+  "data-flow": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 4h4v4H4V4z",
+      "M10 10h4v4h-4v-4z",
+      "M16 16h4v4h-4v-4z",
+      "M8 6h2",
+      "M14 12h2",
+      "M6 8v4l6 6",
+      "M18 8v4l-6 6",
+      "M12 2v8"
+    ],
+    "category": "healthcare"
+  },
+  "api-connect": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 8h5v8H4V8z",
+      "M15 8h5v8h-5V8z",
+      "M9 10h6",
+      "M9 12h6",
+      "M9 14h6",
+      "M6 6v2",
+      "M18 6v2",
+      "M6 16v2",
+      "M18 16v2"
+    ],
+    "category": "healthcare"
+  },
+  "ehr-system": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 3h18v14H3V3z",
+      "M3 17h18v4H3v-4z",
+      "M10 19h4",
+      "M6 6h5v3H6V6z",
+      "M13 6h5",
+      "M13 8h5",
+      "M6 11h12",
+      "M6 13h8"
+    ],
+    "category": "healthcare"
+  },
+  "dashboard-medical": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 3h18v18H3V3z",
+      "M3 9h18",
+      "M9 9v12",
+      "M5 5.5h4",
+      "M13 5.5h6",
+      "M12 14l2 2 4-4",
+      "M5 13h2",
+      "M5 16h2"
+    ],
+    "category": "healthcare"
+  },
+  "analytics-chart": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 3v18h18",
+      "M7 14l3-4 4 2 5-7",
+      "M16 5l3 0v3",
+      "M7 18v-2",
+      "M11 18v-4",
+      "M15 18v-6",
+      "M19 18v-8"
+    ],
+    "category": "healthcare"
+  },
+  "real-time-monitor": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 5h20v12H2V5z",
+      "M8 21h8",
+      "M12 17v4",
+      "M5 11h3l2-4 2 8 2-4h5",
+      "M19 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+    ],
+    "category": "healthcare"
+  },
+  "chatbot-medical": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 4h18v12H9l-4 4v-4H3V4z",
+      "M8 9h1",
+      "M12 9h1",
+      "M16 9h1",
+      "M8 12h8",
+      "M19 2l1-1",
+      "M5 2L4 1"
+    ],
+    "category": "healthcare"
+  },
+  "voice-assistant": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z",
+      "M5 10v1a7 7 0 0 0 14 0v-1",
+      "M12 18v4",
+      "M8 22h8",
+      "M1 10h2",
+      "M21 10h2",
+      "M2 14h3",
+      "M19 14h3"
+    ],
+    "category": "healthcare"
+  },
+  "nlp-text": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 4h16v16H4V4z",
+      "M7 8h10",
+      "M7 11h7",
+      "M7 14h10",
+      "M7 17h4",
+      "M17 13c1.7 0 3 1.3 3 3s-1.3 3-3 3",
+      "M17 13v6"
+    ],
+    "category": "healthcare"
+  },
+  "machine-learning": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0z",
+      "M12 4v4",
+      "M12 16v4",
+      "M4 12h4",
+      "M16 12h4",
+      "M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z",
+      "M6.3 6.3l2.8 2.8",
+      "M14.9 14.9l2.8 2.8",
+      "M6.3 17.7l2.8-2.8",
+      "M14.9 9.1l2.8-2.8"
+    ],
+    "category": "healthcare"
+  },
+  "cloud-health": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M6.5 19a4.5 4.5 0 0 1-.5-9c.3-3.4 3.1-6 6.5-6 3 0 5.5 2 6.2 4.8A3.5 3.5 0 0 1 19.5 19h-13z",
+      "M10.5 13h3",
+      "M12 11.5v3"
+    ],
+    "category": "healthcare"
+  },
+  "secure-data": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M5 11h14v10H5V11z",
+      "M8 11V7c0-2.2 1.8-4 4-4s4 1.8 4 4v4",
+      "M12 15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z",
+      "M12 18v2"
+    ],
+    "category": "healthcare"
+  },
+  "encryption-health": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2l8 4v6c0 5.5-3.8 10.7-8 12-4.2-1.3-8-6.5-8-12V6l8-4z",
+      "M10 13h4",
+      "M12 11v4",
+      "M9 9.5l1.5 1.5",
+      "M13.5 9.5L15 11"
+    ],
+    "category": "healthcare"
+  },
+  "hipaa-shield": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2l8 4v6c0 5.5-3.8 10.7-8 12-4.2-1.3-8-6.5-8-12V6l8-4z",
+      "M9 12l2 2 4-4"
+    ],
+    "category": "healthcare"
+  },
+  "compliance-check": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M5 3h14c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1z",
+      "M8 8l1.5 1.5L13 6",
+      "M8 13l1.5 1.5L13 11",
+      "M8 18l1.5 1.5L13 16",
+      "M15 8h2",
+      "M15 13h2",
+      "M15 18h2"
+    ],
+    "category": "healthcare"
+  },
+  "audit-log": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 2h16v20H4V2z",
+      "M7 6h6",
+      "M7 9h10",
+      "M7 12h10",
+      "M7 15h8",
+      "M7 18h5",
+      "M17 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+    ],
+    "category": "healthcare"
+  },
+  "data-pipeline": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 8h4v8H2V8z",
+      "M10 6h4v12h-4V6z",
+      "M18 4h4v16h-4V4z",
+      "M6 12h4",
+      "M14 12h4"
+    ],
+    "category": "healthcare"
+  },
+  "integration-hub": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z",
+      "M12 2v6",
+      "M12 16v6",
+      "M4 12H2",
+      "M22 12h-2",
+      "M12 8l-6-4",
+      "M12 8l6-4",
+      "M12 16l-6 4",
+      "M12 16l6 4",
+      "M4 12l-2-2",
+      "M4 12l-2 2",
+      "M20 12l2-2",
+      "M20 12l2 2"
+    ],
+    "category": "healthcare"
+  },
+  "webhook": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z",
+      "M4 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z",
+      "M20 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z",
+      "M12 6v5l-6.5 4",
+      "M12 11l6.5 4",
+      "M7 17h10"
+    ],
+    "category": "healthcare"
+  },
+  "rest-api": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 4h16v4H4V4z",
+      "M4 10h16v4H4v-4z",
+      "M4 16h16v4H4v-4z",
+      "M17 6h1",
+      "M17 12h1",
+      "M17 18h1",
+      "M6 6h4",
+      "M6 12h4",
+      "M6 18h4"
+    ],
+    "category": "healthcare"
+  },
+  "graphql": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2l9 5v10l-9 5-9-5V7l9-5z",
+      "M12 2v20",
+      "M3 7l9 5 9-5",
+      "M3 17l9-5 9 5"
+    ],
+    "category": "healthcare"
+  },
+  "microservice": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 3h6v6H3V3z",
+      "M15 3h6v6h-6V3z",
+      "M3 15h6v6H3v-6z",
+      "M15 15h6v6h-6v-6z",
+      "M9 6h6",
+      "M9 18h6",
+      "M6 9v6",
+      "M18 9v6"
+    ],
+    "category": "healthcare"
+  },
+  "edge-computing": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2l10 6v8l-10 6L2 16V8l10-6z",
+      "M12 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z",
+      "M4.5 7L12 12",
+      "M19.5 7L12 12",
+      "M12 22v-10",
+      "M7 4.5l-1-2",
+      "M17 4.5l1-2",
+      "M2 14l-1 1",
+      "M22 14l1 1"
+    ],
+    "category": "healthcare"
+  },
+  "elderly-care": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M10 4.5l-1 6.5h6l-1-6.5",
+      "M9 11l-2 11",
+      "M15 11l2 11",
+      "M7 8c-1.5.5-3 1.5-3 3",
+      "M4 11l-1 8",
+      "M12 7v4"
+    ],
+    "category": "healthcare"
+  },
+  "wheelchair-alt": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M10 4v7h7",
+      "M17 11l2 7",
+      "M7.5 20.5a5 5 0 1 1 5-8.5",
+      "M10 11H7"
+    ],
+    "category": "healthcare"
+  },
+  "walker": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M7 2h10",
+      "M7 2v15",
+      "M17 2v15",
+      "M7 9h10",
+      "M7 17a2 2 0 1 1-2 2",
+      "M17 17a2 2 0 1 0 2 2",
+      "M7 13h10"
+    ],
+    "category": "healthcare"
+  },
+  "hearing-aid": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M16 5c2 2 2 6 0 8",
+      "M13.5 7.5c1 1 1 3 0 4",
+      "M10 6a4 4 0 0 0-4 4c0 3 2 5 2 8",
+      "M8 18a2 2 0 1 1-4 0 2 2 0 0 1 4 0z",
+      "M10 6c0-1.5 1-3 2.5-3",
+      "M18 4l1-2",
+      "M19 9h2"
+    ],
+    "category": "healthcare"
+  },
+  "medication-reminder": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16z",
+      "M12 5v5l3 3",
+      "M5 2l-2 2",
+      "M19 2l2 2",
+      "M8 20l-1 2",
+      "M16 20l1 2",
+      "M11 20h2"
+    ],
+    "category": "healthcare"
+  },
+  "pill-organizer": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 5h20v14H2V5z",
+      "M2 12h20",
+      "M7.5 5v14",
+      "M12 5v14",
+      "M16.5 5v14",
+      "M4.5 8h1",
+      "M9.5 8h1",
+      "M14 8h1",
+      "M18.5 8h1"
+    ],
+    "category": "healthcare"
+  },
+  "care-plan": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M5 2h14c.6 0 1 .4 1 1v18c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1z",
+      "M8 6h8",
+      "M8 10h8",
+      "M8 14h5",
+      "M7 18h2v-2H7v2z",
+      "M12 18h2v-2h-2v2z",
+      "M17 18h1v-2h-2v2z"
+    ],
+    "category": "healthcare"
+  },
+  "family-support": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M9 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
+      "M16 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M5.5 18.5C4 18.5 3 17.1 3 15.5L4.5 9.5c.3-1.2 1.3-2 2.5-2h4c1.2 0 2.2.8 2.5 2l1.5 6c0 1.6-1 3-2.5 3",
+      "M16 7.5l1.5 3c.2.5.5.5 1 .5h1c.5 0 1 .5 1 1v3.5c0 .5-.5 1-1 1h-3",
+      "M12 21.5a3.5 3.5 0 1 1-7 0",
+      "M12 18.5H5.5"
+    ],
+    "category": "healthcare"
+  },
+  "home-care": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 12l9-9 9 9",
+      "M5 10v10h14V10",
+      "M10 20v-6h4v6",
+      "M14 12h-1v-1h1v-1h1v1h1v1h-1v1h-1v-1z"
+    ],
+    "category": "healthcare"
+  },
+  "telehealth": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 4h20v13H2V4z",
+      "M8 21h8",
+      "M12 17v4",
+      "M9 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z",
+      "M6.5 13c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5",
+      "M14 8h5",
+      "M14 10.5h4",
+      "M14 13h3"
+    ],
+    "category": "healthcare"
+  },
+  "video-call-medical": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 6h14v12H2V6z",
+      "M16 10l6-3v10l-6-3v-4z",
+      "M6 10h3",
+      "M7.5 8.5v3"
+    ],
+    "category": "healthcare"
+  },
+  "appointment": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 5h18v16H3V5z",
+      "M3 9h18",
+      "M7 3v4",
+      "M17 3v4",
+      "M7 13h2v2H7v-2z",
+      "M11 13h2v2h-2v-2z",
+      "M15 13h2v2h-2v-2z",
+      "M7 17h2",
+      "M11 17h2"
+    ],
+    "category": "healthcare"
+  },
+  "waiting-room": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 12h18",
+      "M5 12v-4c0-.6.4-1 1-1h3c.6 0 1 .4 1 1v4",
+      "M14 12v-4c0-.6.4-1 1-1h3c.6 0 1 .4 1 1v4",
+      "M5 12v5",
+      "M10 12v5",
+      "M14 12v5",
+      "M19 12v5",
+      "M12 3v3"
+    ],
+    "category": "healthcare"
+  },
+  "triage": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7l3-7z",
+      "M12 8v4",
+      "M12 14a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+    ],
+    "category": "healthcare"
+  },
+  "vitals-monitor": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 4h18v14H3V4z",
+      "M6 11h2l2-4 2 8 2-4h2l1-2h2",
+      "M3 18l3 2",
+      "M21 18l-3 2",
+      "M5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+    ],
+    "category": "healthcare"
+  },
+  "fall-detection": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M10 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M14 8l-4 3-3-2-4 5",
+      "M10 11l2 6-4 4",
+      "M10 11l5 2",
+      "M19 2l2 2-2 2",
+      "M19 8l2 2-2 2"
+    ],
+    "category": "healthcare"
+  },
+  "gps-tracker": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z",
+      "M12 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4z",
+      "M1 12h3",
+      "M20 12h3",
+      "M12 20v3"
+    ],
+    "category": "healthcare"
+  },
+  "emergency-alert": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2L1.5 21h21L12 2z",
+      "M12 9v5",
+      "M12 16.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z",
+      "M3 21h18"
+    ],
+    "category": "healthcare"
+  },
+  "care-coordinator": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z",
+      "M5 22v-3c0-2.8 3.1-5 7-5s7 2.2 7 5v3",
+      "M20 8l1.5-1.5",
+      "M20 8L20 5",
+      "M20 8l-2-1",
+      "M17 1.5a2 2 0 0 1 2 2v2"
+    ],
+    "category": "healthcare"
+  },
+  "social-worker": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M8 6a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
+      "M3 22v-3c0-2.2 2.2-4 5-4s5 1.8 5 4v3",
+      "M16 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M16 10c2.2 0 4 1.5 4 3.5V16",
+      "M12 15.5c0-.5.2-1.1.5-1.5",
+      "M17 19l2 2 3-4"
+    ],
+    "category": "healthcare"
+  },
+  "occupational-therapy": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M9 6h6l1 4h-8l1-4z",
+      "M8 10l-2 6h2l1-3",
+      "M16 10l2 6h-2l-1-3",
+      "M10 16h4v6h-4v-6z",
+      "M6 18h2",
+      "M16 18h2"
+    ],
+    "category": "healthcare"
+  },
+  "physical-therapy": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M14 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+      "M11 7h6l1 4",
+      "M11 7l-3 5",
+      "M8 12l-4 5",
+      "M18 11l3 2",
+      "M14 7v6l-2 5",
+      "M14 13l3 5",
+      "M12 18l-3 4"
+    ],
+    "category": "healthcare"
+  },
+  "speech-therapy": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 7a5 5 0 1 0 0-10 5 5 0 0 0 0 10z",
+      "M10 5h4",
+      "M9 3a3 3 0 0 0 0 4",
+      "M15 3a3 3 0 0 1 0 4",
+      "M5 14c0 0 0 8 7 8s7-8 7-8",
+      "M8 16h8",
+      "M9 19h6"
+    ],
+    "category": "healthcare"
+  },
+  "nutrition-plan": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M5 12a7 7 0 1 1 14 0c0 5-3 9-7 9s-7-4-7-9z",
+      "M12 3v2",
+      "M12 12v3",
+      "M8 9c1-2 3-3 4-3s3 1 4 3",
+      "M9 14h6",
+      "M4 8l2 1",
+      "M20 8l-2 1"
+    ],
+    "category": "healthcare"
+  },
+  "hydration": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2.7c0 0-6 6.3-6 11.3a6 6 0 1 0 12 0c0-5-6-11.3-6-11.3z",
+      "M9.5 14c0 0 0 2.5 2.5 2.5s2.5-2.5 2.5-2.5",
+      "M12 10v-2"
+    ],
+    "category": "healthcare"
+  },
+  "roi-calculator": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1z",
+      "M3 7h18",
+      "M8 11h2v2H8v-2z",
+      "M11 11h2v2h-2v-2z",
+      "M14 11h2v2h-2v-2z",
+      "M8 14.5h2v2H8v-2z",
+      "M11 14.5h2v2h-2v-2z",
+      "M14 14.5h2v2h-2v-2z",
+      "M8 18h8v1H8v-1z",
+      "M7 5h2"
+    ],
+    "category": "healthcare"
+  },
+  "cost-savings": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z",
+      "M12 6v12",
+      "M9 9c0-1.1 1.3-2 3-2s3 .9 3 2-1.3 2-3 2-3 .9-3 2 1.3 2 3 2 3-.9 3-2",
+      "M7 17l-3 3",
+      "M4 17l3 3"
+    ],
+    "category": "healthcare"
+  },
+  "time-saved": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z",
+      "M12 6v6l4 2",
+      "M20 5l2-2",
+      "M2 5L4 3",
+      "M18.5 18.5l2 2"
+    ],
+    "category": "healthcare"
+  },
+  "efficiency-meter": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 14a9 9 0 0 1 18 0",
+      "M3 14h18",
+      "M12 14l-4-7",
+      "M5 14v3",
+      "M19 14v3",
+      "M12 5v2",
+      "M7.5 7l1 1.5",
+      "M16.5 7l-1 1.5"
+    ],
+    "category": "healthcare"
+  },
+  "workflow": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 5h4v4H3V5z",
+      "M10 5h4v4h-4V5z",
+      "M17 5h4v4h-4V5z",
+      "M10 15h4v4h-4v-4z",
+      "M7 7h3",
+      "M14 7h3",
+      "M12 9v6",
+      "M7 17h3",
+      "M14 17h5"
+    ],
+    "category": "healthcare"
+  },
+  "automation-gear": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z",
+      "M12 2v3",
+      "M12 19v3",
+      "M4.9 4.9l2.1 2.1",
+      "M17 17l2.1 2.1",
+      "M2 12h3",
+      "M19 12h3",
+      "M4.9 19.1l2.1-2.1",
+      "M17 7l2.1-2.1",
+      "M10 12l1-2 2 4 1-2"
+    ],
+    "category": "healthcare"
+  },
+  "schedule": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 5h18v16H3V5z",
+      "M3 9h18",
+      "M7 3v4",
+      "M17 3v4",
+      "M7 13h3",
+      "M7 16h5",
+      "M14 13h3",
+      "M16 16h1"
+    ],
+    "category": "healthcare"
+  },
+  "calendar-medical": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 5h18v16H3V5z",
+      "M3 9h18",
+      "M7 3v4",
+      "M17 3v4",
+      "M10.5 14h3",
+      "M12 12.5v3"
+    ],
+    "category": "healthcare"
+  },
+  "billing-code": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 3h16v18H4V3z",
+      "M7 7h4",
+      "M7 10h10",
+      "M7 13h10",
+      "M7 16h6",
+      "M14 7h3v2h-3V7z"
+    ],
+    "category": "healthcare"
+  },
+  "insurance-claim": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 2h16v20H4V2z",
+      "M8 6h8",
+      "M8 9h8",
+      "M8 12h5",
+      "M12 22l-4-4h3v-3h2v3h3l-4 4z",
+      "M15 15l2 2 3-3"
+    ],
+    "category": "healthcare"
+  },
+  "prior-authorization": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M5 2h14v16H5V2z",
+      "M8 6h8",
+      "M8 9h8",
+      "M8 12h5",
+      "M2 14h4",
+      "M4 12v4",
+      "M12 20a3 3 0 1 0 6 0 3 3 0 0 0-6 0z",
+      "M15 18v2l2 1"
+    ],
+    "category": "healthcare"
+  },
+  "referral": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M6 5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z",
+      "M18 5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z",
+      "M6 5v3c0 2 1 3 3 3h6c2 0 3-1 3-3V5",
+      "M10 8l2 2 2-2",
+      "M6 14v8",
+      "M18 14v8",
+      "M3 17h6",
+      "M15 17h6"
+    ],
+    "category": "healthcare"
+  },
+  "discharge-planning": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 3h12v18H4V3z",
+      "M7 7h6",
+      "M7 10h6",
+      "M7 13h4",
+      "M16 10h4v4h-4v-4z",
+      "M18 14v3",
+      "M18 10V7",
+      "M20 10l-2-3-2 3"
+    ],
+    "category": "healthcare"
+  },
+  "bed-management": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M2 16V10h20v6",
+      "M2 10V7c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v3",
+      "M22 10V8c0-.6-.4-1-1-1H8",
+      "M2 16v2h2",
+      "M20 16v2h2",
+      "M4 20h4",
+      "M16 20h4",
+      "M11 14h6",
+      "M14 12v4"
+    ],
+    "category": "healthcare"
+  },
+  "capacity-planning": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 21V3",
+      "M3 21h18",
+      "M6 17h3v4H6v-4z",
+      "M10.5 13h3v8h-3v-8z",
+      "M15 9h3v12h-3V9z",
+      "M6 14l4.5-4 4 2.5L19 7",
+      "M16 7h3v3"
+    ],
+    "category": "healthcare"
+  },
+  "staff-scheduling": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 5h18v16H3V5z",
+      "M3 9h18",
+      "M7 3v4",
+      "M17 3v4",
+      "M7 12a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z",
+      "M12 12a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z",
+      "M17 12a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z",
+      "M7 17h3",
+      "M14 17h3"
+    ],
+    "category": "healthcare"
+  },
+  "shift-handover": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 12a5 5 0 0 1 5-5h0",
+      "M20 12a5 5 0 0 1-5 5h0",
+      "M7 5l2 2-2 2",
+      "M17 19l-2-2 2-2",
+      "M4 5v4h4",
+      "M20 19v-4h-4",
+      "M12 8v8",
+      "M10 10h4",
+      "M10 14h4"
+    ],
+    "category": "healthcare"
+  },
+  "quality-metric": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 4h16v16H4V4z",
+      "M8 14l3-3 2 2 4-5",
+      "M14 8h3v3",
+      "M4 20h16",
+      "M8 17v3",
+      "M12 15v5",
+      "M16 13v7"
+    ],
+    "category": "healthcare"
+  },
+  "patient-satisfaction": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z",
+      "M8 9.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z",
+      "M16 9.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z",
+      "M8 15c1.3 1.5 2.5 2 4 2s2.7-.5 4-2"
+    ],
+    "category": "healthcare"
+  },
+  "nps-score": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 14a9 9 0 0 1 18 0",
+      "M3 14h18",
+      "M12 14l3-8",
+      "M6 14a1 1 0 1 0 0 2 1 1 0 0 0 0-2z",
+      "M12 14a1 1 0 1 0 0 2 1 1 0 0 0 0-2z",
+      "M18 14a1 1 0 1 0 0 2 1 1 0 0 0 0-2z",
+      "M5 8l1 1",
+      "M19 8l-1 1",
+      "M12 5v2"
+    ],
+    "category": "healthcare"
+  },
+  "sla-badge": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2l3 6 6 1-4.5 4 1 6.5L12 17l-5.5 2.5 1-6.5L3 9l6-1 3-6z",
+      "M10 11h4",
+      "M12 9v4"
+    ],
+    "category": "healthcare"
+  },
+  "uptime": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z",
+      "M12 6v6l4 4",
+      "M18.4 4l2.1-1.5",
+      "M5.6 4L3.5 2.5",
+      "M2 12h2",
+      "M20 12h2"
+    ],
+    "category": "healthcare"
+  },
+  "support-ticket": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M3 5h18v14H3V5z",
+      "M3 5l9 7 9-7",
+      "M10.5 13h3",
+      "M12 11.5v3",
+      "M3 15l5-4",
+      "M21 15l-5-4"
+    ],
+    "category": "healthcare"
+  },
+  "knowledge-base": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M4 2h12l4 4v14c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1z",
+      "M16 2v4h4",
+      "M7 9h10",
+      "M7 12h10",
+      "M7 15h7",
+      "M7 18h4"
+    ],
+    "category": "healthcare"
+  },
+  "onboarding": {
+    "viewBox": "0 0 24 24",
+    "paths": [
+      "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z",
+      "M5 22v-2c0-2.8 3.1-5 7-5s7 2.2 7 5v2",
+      "M20 7l2 2-2 2",
+      "M14 9h8",
+      "M4 2l-2 2 2 2"
+    ],
+    "category": "healthcare"
+  }
+}

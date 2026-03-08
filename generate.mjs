@@ -37,6 +37,7 @@ const lines = [
   '  paths: string[];',
   '  circles?: { cx: number; cy: number; r: number }[];',
   '  lines?: { x1: number; y1: number; x2: number; y2: number }[];',
+  '  stroke?: boolean;',
   '}',
   '',
   'export const iconData: Record<string, IconData> = {'
@@ -64,6 +65,10 @@ for (const name of iconNames) {
     lines.push(`    lines: [`);
     lines.push(linesStr);
     lines.push(`    ],`);
+  }
+
+  if (icon.stroke) {
+    lines.push(`    stroke: true,`);
   }
 
   lines.push(`  },`);

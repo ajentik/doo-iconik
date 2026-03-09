@@ -52,7 +52,6 @@ export type DoodleIconName =
   | 'bell2'
   | 'bill'
   | 'billing-code'
-  | 'bisexual'
   | 'blood'
   | 'blood-bag'
   | 'blood-pressure'

@@ -1,0 +1,12 @@
+name: doo_iconik
+description: 606+ hand-drawn doodle style icons for Flutter.
+version: 1.0.0
+homepage: https://github.com/ajentik/doo-iconik
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter

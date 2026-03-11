@@ -1,0 +1,28 @@
+{
+  "name": "@doo-iconik/astro",
+  "version": "1.0.0",
+  "description": "Astro component for doo-iconik hand-drawn icons",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./DooIconik.astro": "./src/DooIconik.astro"
+  },
+  "files": ["src"],
+  "dependencies": {
+    "@doo-iconik/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "astro": "^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "astro": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["icons", "doodle", "hand-drawn", "astro", "doo-iconik"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajentik/doo-iconik.git",
+    "directory": "packages/astro"
+  }
+}

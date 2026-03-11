@@ -1,6 +1,6 @@
 # doo-iconik
 
-606+ hand-drawn doodle style SVG icons for any framework. Works with React, Vue, Svelte, vanilla JS, and Ruby on Rails.
+606+ hand-drawn doodle style SVG icons for any framework.
 
 ## Packages
 
@@ -10,8 +10,17 @@
 | `@doo-iconik/react` | React 18/19 | `npm i @doo-iconik/react` |
 | `@doo-iconik/vue` | Vue 3 | `npm i @doo-iconik/vue` |
 | `@doo-iconik/svelte` | Svelte 5 | `npm i @doo-iconik/svelte` |
+| `@doo-iconik/solid` | SolidJS | `npm i @doo-iconik/solid` |
+| `@doo-iconik/angular` | Angular 16+ | `npm i @doo-iconik/angular` |
+| `@doo-iconik/preact` | Preact 10 | `npm i @doo-iconik/preact` |
+| `@doo-iconik/qwik` | Qwik | `npm i @doo-iconik/qwik` |
+| `@doo-iconik/astro` | Astro 3/4 | `npm i @doo-iconik/astro` |
+| `@doo-iconik/lit` | Lit 3 | `npm i @doo-iconik/lit` |
 | `@doo-iconik/vanilla` | Vanilla JS / Web Components | `npm i @doo-iconik/vanilla` |
+| `@doo-iconik/alpine` | Alpine.js 3 | `npm i @doo-iconik/alpine` |
 | `doo_iconik` | Ruby on Rails | `gem 'doo_iconik'` |
+| `ajentik/doo-iconik-laravel` | Laravel 10/11/12 | `composer require ajentik/doo-iconik-laravel` |
+| `doo_iconik` | Flutter 3.10+ | `flutter pub add doo_iconik` |
 
 ## Usage
 
@@ -47,6 +56,69 @@ import { DooIconik } from '@doo-iconik/vue';
 <DooIconik name="heart" size="lg" spin />
 ```
 
+### SolidJS
+
+```jsx
+import { DooIconik } from '@doo-iconik/solid';
+
+function App() {
+  return <DooIconik name="heart" size="lg" spin />;
+}
+```
+
+### Angular
+
+```typescript
+import { DooIconikComponent } from '@doo-iconik/angular';
+
+@Component({
+  standalone: true,
+  imports: [DooIconikComponent],
+  template: `<doo-iconik name="heart" size="lg" [spin]="true" />`
+})
+export class AppComponent {}
+```
+
+### Preact
+
+```jsx
+import { DooIconik } from '@doo-iconik/preact';
+
+function App() {
+  return <DooIconik name="heart" size="lg" spin />;
+}
+```
+
+### Qwik
+
+```jsx
+import { DooIconik } from '@doo-iconik/qwik';
+
+export default component$(() => {
+  return <DooIconik name="heart" size="lg" spin />;
+});
+```
+
+### Astro
+
+```astro
+---
+import { DooIconik } from '@doo-iconik/astro';
+---
+
+<DooIconik name="heart" size="lg" spin />
+```
+
+### Lit
+
+```js
+import '@doo-iconik/lit';
+```
+
+```html
+<doo-iconik-lit name="heart" size="lg" spin></doo-iconik-lit>
+```
+
 ### Vanilla JS
 
 ```js
@@ -66,6 +138,24 @@ const svg = createIcon('heart', { size: 'lg', spin: true });
 document.body.appendChild(svg);
 ```
 
+### Alpine.js
+
+```js
+import Alpine from 'alpinejs';
+import dooIconikPlugin from '@doo-iconik/alpine';
+
+Alpine.plugin(dooIconikPlugin);
+Alpine.start();
+```
+
+```html
+<!-- Directive with modifiers -->
+<div x-data x-doo-iconik.lg.spin="'heart'"></div>
+
+<!-- Or with options object -->
+<div x-data x-doo-iconik="{ name: 'heart', size: 'lg', spin: true }"></div>
+```
+
 ### Ruby on Rails
 
 ```ruby
@@ -79,6 +169,35 @@ rails generate doo_iconik:install
 
 ```erb
 <%= doo_iconik 'heart', size: :lg, spin: true %>
+```
+
+### Laravel
+
+```bash
+composer require ajentik/doo-iconik-laravel
+php artisan vendor:publish --tag=doo-iconik-assets
+```
+
+```blade
+{{-- Blade component --}}
+<x-doo-iconik name="heart" size="lg" :spin="true" />
+
+{{-- Or Blade directive --}}
+@dooiconik('heart', 'lg', spin: true)
+```
+
+### Flutter
+
+```yaml
+# pubspec.yaml
+dependencies:
+  doo_iconik: ^1.0.0
+```
+
+```dart
+import 'package:doo_iconik/doo_iconik.dart';
+
+DooIconik(name: 'heart', size: DooIconikSize.lg, spin: true)
 ```
 
 ## Props

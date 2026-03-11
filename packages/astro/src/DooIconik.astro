@@ -1,0 +1,61 @@
+---
+import type { DooIconikName, DooIconikSize } from '@doo-iconik/core';
+import { iconData, resolveSize, buildTransform, buildAnimationClasses, animationCSS } from '@doo-iconik/core';
+
+interface Props {
+  name: DooIconikName;
+  size?: DooIconikSize | number;
+  spin?: boolean;
+  pulse?: boolean;
+  bounce?: boolean;
+  flipHorizontal?: boolean;
+  flipVertical?: boolean;
+  class?: string;
+  [key: string]: any;
+}
+
+const {
+  name,
+  size = 'md',
+  spin = false,
+  pulse = false,
+  bounce = false,
+  flipHorizontal = false,
+  flipVertical = false,
+  class: className = '',
+  ...rest
+} = Astro.props;
+
+const icon = iconData[name];
+const pixelSize = resolveSize(size);
+const transforms = buildTransform(flipHorizontal, flipVertical);
+const animClass = buildAnimationClasses(spin, pulse, bounce);
+const classes = [animClass, className].filter(Boolean).join(' ');
+const needsAnimation = spin || pulse || bounce;
+---
+
+{icon && (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox={icon.viewBox}
+    width={pixelSize}
+    height={pixelSize}
+    fill={icon.stroke ? 'none' : 'currentColor'}
+    stroke={icon.stroke ? 'currentColor' : undefined}
+    stroke-width={icon.stroke ? 2 : undefined}
+    stroke-linecap={icon.stroke ? 'round' : undefined}
+    stroke-linejoin={icon.stroke ? 'round' : undefined}
+    class={classes || undefined}
+    style={transforms ? `transform: ${transforms}` : undefined}
+    aria-hidden="true"
+    {...rest}
+  >
+    {icon.paths.map((d) => <path d={d} />)}
+    {icon.circles?.map((c) => <circle cx={c.cx} cy={c.cy} r={c.r} />)}
+    {icon.lines?.map((l) => <line x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2} />)}
+  </svg>
+)}
+
+{needsAnimation && (
+  <style set:html={animationCSS} />
+)}

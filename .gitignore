@@ -4,3 +4,5 @@ package-lock.json
 dist/
 packages/*/dist/
 *.tsbuildinfo
+docs/icon-data-raw.json
+.sisyphus/

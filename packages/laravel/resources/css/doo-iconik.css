@@ -1,0 +1,6 @@
+@keyframes doo-iconik-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes doo-iconik-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+@keyframes doo-iconik-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-25%); } }
+.doo-iconik-spin { animation: doo-iconik-spin 1s linear infinite; }
+.doo-iconik-pulse { animation: doo-iconik-pulse 2s ease-in-out infinite; }
+.doo-iconik-bounce { animation: doo-iconik-bounce 1s ease infinite; }

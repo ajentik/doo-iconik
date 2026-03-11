@@ -1,0 +1,19 @@
+{
+  "name": "ajentik/doo-iconik-laravel",
+  "description": "606+ hand-drawn doodle icons for Laravel Blade",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0|^12.0",
+    "illuminate/view": "^10.0|^11.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": { "DooIconik\\Laravel\\": "src/" }
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["DooIconik\\Laravel\\DooIconikServiceProvider"]
+    }
+  }
+}

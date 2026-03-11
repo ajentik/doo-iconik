@@ -1,0 +1,38 @@
+{
+  "name": "@doo-iconik/solid",
+  "version": "1.0.0",
+  "description": "SolidJS component for doo-iconik hand-drawn icons",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts"
+  },
+  "dependencies": {
+    "@doo-iconik/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.7.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["icons", "doodle", "hand-drawn", "solid", "solidjs", "doo-iconik"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajentik/doo-iconik.git",
+    "directory": "packages/solid"
+  }
+}

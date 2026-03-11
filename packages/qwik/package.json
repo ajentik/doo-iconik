@@ -1,0 +1,38 @@
+{
+  "name": "@doo-iconik/qwik",
+  "version": "1.0.0",
+  "description": "Qwik component for doo-iconik hand-drawn icons",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external @builder.io/qwik"
+  },
+  "dependencies": {
+    "@doo-iconik/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@builder.io/qwik": "^1.5.0 || ^2.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["icons", "doodle", "hand-drawn", "qwik", "doo-iconik"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajentik/doo-iconik.git",
+    "directory": "packages/qwik"
+  }
+}

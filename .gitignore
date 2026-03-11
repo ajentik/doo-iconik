@@ -1,3 +1,6 @@
 node_modules/
 .svelte-kit/
 package-lock.json
+dist/
+packages/*/dist/
+*.tsbuildinfo

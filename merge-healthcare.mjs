@@ -1,11 +1,10 @@
 /**
  * Merge healthcare icons into the main icon data and regenerate library files
  */
-import { readFileSync, writeFileSync } from 'fs';
-
-// Read existing icon data
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const mainIcons = JSON.parse(readFileSync(join(__dirname, 'icon-data-raw.json'), 'utf-8'));
@@ -32,21 +31,24 @@ console.log(`Total icons: ${Object.keys(mainIcons).length}`);
 // Write merged data
 writeFileSync(join(__dirname, 'icon-data-raw.json'), JSON.stringify(mainIcons, null, 2));
 
+// Ensure output directory exists
+mkdirSync(join(__dirname, 'packages', 'core', 'src'), { recursive: true });
+
 // Generate types.ts
 const allNames = Object.keys(mainIcons).sort();
 const allCategories = [...new Set(Object.values(mainIcons).map(d => d.category))].sort();
 
-let typesContent = '// Auto-generated — do not edit manually\nexport type DoodleIconName =\n';
+let typesContent = '// Auto-generated — do not edit manually\nexport type DooIconikName =\n';
 typesContent += allNames.map(n => `  | '${n}'`).join('\n') + ';\n\n';
-typesContent += `export type DoodleIconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';\n\n`;
-typesContent += 'export type DoodleIconCategory =\n';
+typesContent += `export type DooIconikSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';\n\n`;
+typesContent += 'export type DooIconikCategory =\n';
 typesContent += allCategories.map(c => `  | '${c}'`).join('\n') + ';\n';
 
-writeFileSync(join(__dirname, 'src/lib/types.ts'), typesContent);
+writeFileSync(join(__dirname, 'packages/core/src/types.ts'), typesContent);
 
 // Generate icon-data.ts
 let dataContent = '// Auto-generated — do not edit manually\n\n';
-dataContent += 'export interface IconData {\n  viewBox: string;\n  paths: string[];\n  circles?: { cx: number; cy: number; r: number }[];\n  lines?: { x1: number; y1: number; x2: number; y2: number }[];\n}\n\n';
+dataContent += 'export interface IconData {\n  viewBox: string;\n  paths: string[];\n  circles?: { cx: number; cy: number; r: number }[];\n  lines?: { x1: number; y1: number; x2: number; y2: number }[];\n  stroke?: boolean;\n}\n\n';
 dataContent += 'export const iconData: Record<string, IconData> = {\n';
 
 for (const name of allNames) {
@@ -64,12 +66,15 @@ for (const name of allNames) {
   if (icon.lines && icon.lines.length > 0) {
     dataContent += `    lines: [${icon.lines.map(l => `{ x1: ${l.x1}, y1: ${l.y1}, x2: ${l.x2}, y2: ${l.y2} }`).join(', ')}],\n`;
   }
+  if (icon.stroke) {
+    dataContent += `    stroke: true,\n`;
+  }
   dataContent += `  },\n`;
 }
 
 dataContent += '};\n';
 
-writeFileSync(join(__dirname, 'src/lib/icon-data.ts'), dataContent);
+writeFileSync(join(__dirname, 'packages/core/src/icon-data.ts'), dataContent);
 
 console.log(`\nRegenerated types.ts (${allNames.length} names) and icon-data.ts`);
 console.log(`Categories: ${allCategories.join(', ')}`);

@@ -1,0 +1,39 @@
+{
+  "name": "@doo-iconik/svelte",
+  "version": "1.0.0",
+  "description": "Svelte component for doo-iconik hand-drawn icons",
+  "license": "MIT",
+  "type": "module",
+  "svelte": "./dist/DooIconik.svelte",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "svelte": "./dist/DooIconik.svelte",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "svelte-package -i src -o dist"
+  },
+  "dependencies": {
+    "@doo-iconik/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/package": "^2.0.0",
+    "svelte": "^5.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["icons", "doodle", "hand-drawn", "svelte", "doo-iconik"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajentik/svelte-doodle-icons.git",
+    "directory": "packages/svelte"
+  }
+}

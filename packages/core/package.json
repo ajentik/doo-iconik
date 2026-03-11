@@ -1,0 +1,44 @@
+{
+  "name": "@doo-iconik/core",
+  "version": "1.0.0",
+  "description": "Framework-agnostic core icon data and utilities for doo-iconik",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./icon-data": {
+      "types": "./dist/icon-data.d.ts",
+      "import": "./dist/icon-data.js",
+      "default": "./dist/icon-data.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.js",
+      "default": "./dist/types.js"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "import": "./dist/utils.js",
+      "default": "./dist/utils.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["icons", "doodle", "hand-drawn", "healthcare", "ui", "doo-iconik"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajentik/svelte-doodle-icons.git",
+    "directory": "packages/core"
+  }
+}

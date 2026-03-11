@@ -1,0 +1,63 @@
+import { iconData, resolveSize, buildTransform, buildAnimationClasses, animationCSS } from '@doo-iconik/core';
+import type { DooIconikName, DooIconikSize } from '@doo-iconik/core';
+
+export class DooIconikElement extends HTMLElement {
+  static get observedAttributes() {
+    return ['name', 'size', 'spin', 'pulse', 'bounce', 'flip-horizontal', 'flip-vertical'];
+  }
+
+  private shadow: ShadowRoot;
+
+  constructor() {
+    super();
+    this.shadow = this.attachShadow({ mode: 'open' });
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  attributeChangedCallback() {
+    this.render();
+  }
+
+  private render() {
+    const name = this.getAttribute('name') as DooIconikName;
+    if (!name) return;
+
+    const icon = iconData[name];
+    if (!icon) return;
+
+    const size = this.getAttribute('size') || 'md';
+    const pixelSize = resolveSize(isNaN(Number(size)) ? size as DooIconikSize : Number(size));
+    const spin = this.hasAttribute('spin');
+    const pulse = this.hasAttribute('pulse');
+    const bounce = this.hasAttribute('bounce');
+    const flipH = this.hasAttribute('flip-horizontal');
+    const flipV = this.hasAttribute('flip-vertical');
+
+    const animClass = buildAnimationClasses(spin, pulse, bounce);
+    const transform = buildTransform(flipH, flipV);
+
+    const strokeAttrs = icon.stroke
+      ? 'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'
+      : 'fill="currentColor"';
+
+    const paths = icon.paths.map(d => `<path d="${d}" />`).join('');
+    const circles = (icon.circles || []).map(c => `<circle cx="${c.cx}" cy="${c.cy}" r="${c.r}" />`).join('');
+    const lines = (icon.lines || []).map(l => `<line x1="${l.x1}" y1="${l.y1}" x2="${l.x2}" y2="${l.y2}" />`).join('');
+
+    this.shadow.innerHTML = `
+      <style>${animationCSS}</style>
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="${icon.viewBox}"
+        width="${pixelSize}" height="${pixelSize}"
+        ${strokeAttrs}
+        class="${animClass}"
+        ${transform ? `style="transform: ${transform}"` : ''}
+        aria-hidden="true">
+        ${paths}${circles}${lines}
+      </svg>
+    `;
+  }
+}

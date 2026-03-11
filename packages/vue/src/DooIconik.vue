@@ -1,0 +1,72 @@
+<script setup lang="ts">
+import { computed, onMounted } from 'vue';
+import { iconData, resolveSize, buildTransform, buildAnimationClasses, animationCSS } from '@doo-iconik/core';
+import type { DooIconikName, DooIconikSize } from '@doo-iconik/core';
+
+const props = withDefaults(defineProps<{
+  name: DooIconikName;
+  size?: DooIconikSize | number;
+  spin?: boolean;
+  pulse?: boolean;
+  bounce?: boolean;
+  flipHorizontal?: boolean;
+  flipVertical?: boolean;
+}>(), {
+  size: 'md',
+  spin: false,
+  pulse: false,
+  bounce: false,
+  flipHorizontal: false,
+  flipVertical: false,
+});
+
+const icon = computed(() => iconData[props.name]);
+const pixelSize = computed(() => resolveSize(props.size));
+const transforms = computed(() => buildTransform(props.flipHorizontal, props.flipVertical));
+const animClass = computed(() => buildAnimationClasses(props.spin, props.pulse, props.bounce));
+
+// Inject animation CSS once
+onMounted(() => {
+  if (!document.getElementById('doo-iconik-styles')) {
+    const style = document.createElement('style');
+    style.id = 'doo-iconik-styles';
+    style.textContent = animationCSS;
+    document.head.appendChild(style);
+  }
+});
+</script>
+
+<template>
+  <svg
+    v-if="icon"
+    xmlns="http://www.w3.org/2000/svg"
+    :viewBox="icon.viewBox"
+    :width="pixelSize"
+    :height="pixelSize"
+    :fill="icon.stroke ? 'none' : 'currentColor'"
+    :stroke="icon.stroke ? 'currentColor' : undefined"
+    :stroke-width="icon.stroke ? 2 : undefined"
+    :stroke-linecap="icon.stroke ? 'round' : undefined"
+    :stroke-linejoin="icon.stroke ? 'round' : undefined"
+    :class="animClass"
+    :style="transforms ? { transform: transforms } : undefined"
+    aria-hidden="true"
+  >
+    <path v-for="(d, i) in icon.paths" :key="'p' + i" :d="d" />
+    <circle
+      v-for="(c, i) in icon.circles"
+      :key="'c' + i"
+      :cx="c.cx"
+      :cy="c.cy"
+      :r="c.r"
+    />
+    <line
+      v-for="(l, i) in icon.lines"
+      :key="'l' + i"
+      :x1="l.x1"
+      :y1="l.y1"
+      :x2="l.x2"
+      :y2="l.y2"
+    />
+  </svg>
+</template>

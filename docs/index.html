@@ -500,6 +500,75 @@
         font-size: 2.5rem;
       }
     }
+
+    .usage-section {
+      max-width: 900px;
+      margin: 0 auto var(--spacing-8);
+      padding: 0 var(--spacing-4);
+    }
+
+    .usage-section h2 {
+      font-size: 1.25rem;
+      margin-bottom: var(--spacing-4);
+      color: var(--text-primary);
+    }
+
+    .usage-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-1);
+      margin-bottom: var(--spacing-3);
+    }
+
+    .usage-tab {
+      padding: var(--spacing-1) var(--spacing-3);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .usage-tab:hover {
+      border-color: var(--border-hover);
+      color: var(--text-primary);
+    }
+
+    .usage-tab.active {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: white;
+    }
+
+    .usage-code {
+      display: none;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-4);
+      overflow-x: auto;
+    }
+
+    .usage-code.active {
+      display: block;
+    }
+
+    .usage-code pre {
+      margin: 0;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--text-primary);
+      white-space: pre;
+    }
+
+    .usage-code .install {
+      color: var(--text-muted);
+      margin-bottom: var(--spacing-2);
+      font-size: 0.75rem;
+    }
   </style>
 </head>
 <body>
@@ -619,6 +688,136 @@
       <span><strong><span id="stats-total">0</span></strong> total</span>
     </div>
   </div>
+
+  <section class="usage-section">
+    <h2>Quick Start</h2>
+    <div class="usage-tabs" id="usageTabs">
+      <button class="usage-tab active" data-tab="react">React</button>
+      <button class="usage-tab" data-tab="vue">Vue</button>
+      <button class="usage-tab" data-tab="svelte">Svelte</button>
+      <button class="usage-tab" data-tab="angular">Angular</button>
+      <button class="usage-tab" data-tab="solid">Solid</button>
+      <button class="usage-tab" data-tab="lit">Lit</button>
+      <button class="usage-tab" data-tab="preact">Preact</button>
+      <button class="usage-tab" data-tab="qwik">Qwik</button>
+      <button class="usage-tab" data-tab="astro">Astro</button>
+      <button class="usage-tab" data-tab="vanilla">Vanilla</button>
+      <button class="usage-tab" data-tab="alpine">Alpine</button>
+      <button class="usage-tab" data-tab="laravel">Laravel</button>
+      <button class="usage-tab" data-tab="rails">Rails</button>
+      <button class="usage-tab" data-tab="flutter">Flutter</button>
+    </div>
+
+    <div class="usage-code active" data-tab="react">
+      <div class="install">npm install @doo-iconik/react</div>
+      <pre>import { DooIconik } from '@doo-iconik/react';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="vue">
+      <div class="install">npm install @doo-iconik/vue</div>
+      <pre>import { DooIconik } from '@doo-iconik/vue';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="svelte">
+      <div class="install">npm install @doo-iconik/svelte</div>
+      <pre>import { DooIconik } from '@doo-iconik/svelte';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="angular">
+      <div class="install">npm install @doo-iconik/angular</div>
+      <pre>import { DooIconikModule } from '@doo-iconik/angular';
+
+&lt;doo-iconik name="heart" size="md"&gt;&lt;/doo-iconik&gt;
+&lt;doo-iconik name="star" variant="neon" animation="pulse"&gt;&lt;/doo-iconik&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="solid">
+      <div class="install">npm install @doo-iconik/solid</div>
+      <pre>import { DooIconik } from '@doo-iconik/solid';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="lit">
+      <div class="install">npm install @doo-iconik/lit</div>
+      <pre>import '@doo-iconik/lit';
+
+&lt;doo-iconik name="heart" size="md"&gt;&lt;/doo-iconik&gt;
+&lt;doo-iconik name="star" variant="neon" animation="pulse"&gt;&lt;/doo-iconik&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="preact">
+      <div class="install">npm install @doo-iconik/preact</div>
+      <pre>import { DooIconik } from '@doo-iconik/preact';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="qwik">
+      <div class="install">npm install @doo-iconik/qwik</div>
+      <pre>import { DooIconik } from '@doo-iconik/qwik';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="astro">
+      <div class="install">npm install @doo-iconik/astro</div>
+      <pre>---
+import { DooIconik } from '@doo-iconik/astro';
+---
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="vanilla">
+      <div class="install">npm install @doo-iconik/vanilla</div>
+      <pre>import { createIcon } from '@doo-iconik/vanilla';
+
+const icon = createIcon({ name: 'heart', size: 'md' });
+document.body.appendChild(icon);</pre>
+    </div>
+
+    <div class="usage-code" data-tab="alpine">
+      <div class="install">npm install @doo-iconik/alpine</div>
+      <pre>import { dooIconikPlugin } from '@doo-iconik/alpine';
+Alpine.plugin(dooIconikPlugin);
+
+&lt;div x-data x-doo-iconik="{ name: 'heart', size: 'md' }"&gt;&lt;/div&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="laravel">
+      <div class="install">composer require ajentik/doo-iconik</div>
+      <pre>&lt;x-doo-iconik name="heart" size="md" /&gt;
+&lt;x-doo-iconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="rails">
+      <div class="install">gem install doo_iconik</div>
+      <pre>&lt;%= doo_iconik 'heart', size: :md %&gt;
+&lt;%= doo_iconik 'star', variant: :neon, animation: :pulse %&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="flutter">
+      <div class="install">flutter pub add doo_iconik</div>
+      <pre>import 'package:doo_iconik/doo_iconik.dart';
+
+DooIconik(name: 'heart', size: DooIconikSize.md)
+DooIconik(name: 'star', variant: DooIconikVariant.neon)</pre>
+    </div>
+  </section>
 
   <main class="main-content">
     <div class="icon-grid" id="icon-grid"></div>
@@ -857,6 +1056,16 @@
         console.error('Failed to copy:', err);
       });
     }
+
+    // Usage tabs
+    document.querySelectorAll('.usage-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.usage-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.usage-code').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelector(`.usage-code[data-tab="${tab.dataset.tab}"]`).classList.add('active');
+      });
+    });
 
     init();
   </script>

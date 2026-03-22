@@ -500,6 +500,304 @@
         font-size: 2.5rem;
       }
     }
+
+    .usage-section {
+      max-width: 900px;
+      margin: 0 auto var(--spacing-8);
+      padding: 0 var(--spacing-4);
+    }
+
+    .usage-section h2 {
+      font-size: 1.25rem;
+      margin-bottom: var(--spacing-4);
+      color: var(--text-primary);
+    }
+
+    .usage-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-1);
+      margin-bottom: var(--spacing-3);
+    }
+
+    .usage-tab {
+      padding: var(--spacing-1) var(--spacing-3);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .usage-tab:hover {
+      border-color: var(--border-hover);
+      color: var(--text-primary);
+    }
+
+    .usage-tab.active {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: white;
+    }
+
+    .usage-code {
+      display: none;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-4);
+      overflow-x: auto;
+    }
+
+    .usage-code.active {
+      display: block;
+    }
+
+    .usage-code pre {
+      margin: 0;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--text-primary);
+      white-space: pre;
+    }
+
+    .usage-code .install {
+      color: var(--text-muted);
+      margin-bottom: var(--spacing-2);
+      font-size: 0.75rem;
+    }
+
+    /* Preview Panel */
+    .preview-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+
+    .preview-overlay.active {
+      display: block;
+    }
+
+    .preview-panel {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 420px;
+      height: 100vh;
+      background: var(--bg-primary);
+      border-left: 1px solid var(--border-color);
+      z-index: 1000;
+      overflow-y: auto;
+      padding: var(--spacing-6);
+      box-shadow: -4px 0 24px rgba(0,0,0,0.2);
+    }
+
+    .preview-panel.active {
+      display: block;
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--spacing-6);
+    }
+
+    .preview-header h3 {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .preview-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: var(--spacing-1);
+      line-height: 1;
+    }
+
+    .preview-close:hover {
+      color: var(--text-primary);
+    }
+
+    .preview-icon-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 160px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--spacing-6);
+    }
+
+    .preview-icon-area svg {
+      width: 96px;
+      height: 96px;
+    }
+
+    .preview-controls {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-4);
+      margin-bottom: var(--spacing-6);
+    }
+
+    .preview-control-row {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-1);
+    }
+
+    .preview-control-row label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .preview-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .preview-pill {
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    .preview-pill:hover {
+      border-color: var(--border-hover);
+    }
+
+    .preview-pill.active {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: white;
+    }
+
+    .preview-toggles {
+      display: flex;
+      gap: var(--spacing-3);
+      align-items: center;
+    }
+
+    .preview-toggle {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+    }
+
+    .preview-toggle input {
+      margin: 0;
+    }
+
+    .preview-color-row {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-3);
+    }
+
+    .preview-color-input {
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      padding: 0;
+      background: none;
+    }
+
+    .preview-snippet {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .preview-snippet-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--spacing-2) var(--spacing-3);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .preview-snippet-tabs {
+      display: flex;
+      gap: 2px;
+    }
+
+    .preview-snippet-tab {
+      padding: 2px 8px;
+      font-size: 0.65rem;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: var(--radius-sm);
+    }
+
+    .preview-snippet-tab.active {
+      background: var(--accent-primary);
+      color: white;
+    }
+
+    .preview-copy-btn {
+      padding: 2px 8px;
+      font-size: 0.65rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    .preview-copy-btn:hover {
+      border-color: var(--accent-primary);
+      color: var(--accent-primary);
+    }
+
+    .preview-snippet pre {
+      margin: 0;
+      padding: var(--spacing-3);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.75rem;
+      line-height: 1.5;
+      color: var(--text-primary);
+      white-space: pre;
+      overflow-x: auto;
+    }
+
+    @media (max-width: 768px) {
+      .preview-panel {
+        width: 100%;
+        height: 70vh;
+        top: auto;
+        bottom: 0;
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -620,6 +918,136 @@
     </div>
   </div>
 
+  <section class="usage-section">
+    <h2>Quick Start</h2>
+    <div class="usage-tabs" id="usageTabs">
+      <button class="usage-tab active" data-tab="react">React</button>
+      <button class="usage-tab" data-tab="vue">Vue</button>
+      <button class="usage-tab" data-tab="svelte">Svelte</button>
+      <button class="usage-tab" data-tab="angular">Angular</button>
+      <button class="usage-tab" data-tab="solid">Solid</button>
+      <button class="usage-tab" data-tab="lit">Lit</button>
+      <button class="usage-tab" data-tab="preact">Preact</button>
+      <button class="usage-tab" data-tab="qwik">Qwik</button>
+      <button class="usage-tab" data-tab="astro">Astro</button>
+      <button class="usage-tab" data-tab="vanilla">Vanilla</button>
+      <button class="usage-tab" data-tab="alpine">Alpine</button>
+      <button class="usage-tab" data-tab="laravel">Laravel</button>
+      <button class="usage-tab" data-tab="rails">Rails</button>
+      <button class="usage-tab" data-tab="flutter">Flutter</button>
+    </div>
+
+    <div class="usage-code active" data-tab="react">
+      <div class="install">npm install @doo-iconik/react</div>
+      <pre>import { DooIconik } from '@doo-iconik/react';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="vue">
+      <div class="install">npm install @doo-iconik/vue</div>
+      <pre>import { DooIconik } from '@doo-iconik/vue';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="svelte">
+      <div class="install">npm install @doo-iconik/svelte</div>
+      <pre>import { DooIconik } from '@doo-iconik/svelte';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="angular">
+      <div class="install">npm install @doo-iconik/angular</div>
+      <pre>import { DooIconikModule } from '@doo-iconik/angular';
+
+&lt;doo-iconik name="heart" size="md"&gt;&lt;/doo-iconik&gt;
+&lt;doo-iconik name="star" variant="neon" animation="pulse"&gt;&lt;/doo-iconik&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="solid">
+      <div class="install">npm install @doo-iconik/solid</div>
+      <pre>import { DooIconik } from '@doo-iconik/solid';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="lit">
+      <div class="install">npm install @doo-iconik/lit</div>
+      <pre>import '@doo-iconik/lit';
+
+&lt;doo-iconik name="heart" size="md"&gt;&lt;/doo-iconik&gt;
+&lt;doo-iconik name="star" variant="neon" animation="pulse"&gt;&lt;/doo-iconik&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="preact">
+      <div class="install">npm install @doo-iconik/preact</div>
+      <pre>import { DooIconik } from '@doo-iconik/preact';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="qwik">
+      <div class="install">npm install @doo-iconik/qwik</div>
+      <pre>import { DooIconik } from '@doo-iconik/qwik';
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="astro">
+      <div class="install">npm install @doo-iconik/astro</div>
+      <pre>---
+import { DooIconik } from '@doo-iconik/astro';
+---
+
+&lt;DooIconik name="heart" size="md" /&gt;
+&lt;DooIconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="vanilla">
+      <div class="install">npm install @doo-iconik/vanilla</div>
+      <pre>import { createIcon } from '@doo-iconik/vanilla';
+
+const icon = createIcon({ name: 'heart', size: 'md' });
+document.body.appendChild(icon);</pre>
+    </div>
+
+    <div class="usage-code" data-tab="alpine">
+      <div class="install">npm install @doo-iconik/alpine</div>
+      <pre>import { dooIconikPlugin } from '@doo-iconik/alpine';
+Alpine.plugin(dooIconikPlugin);
+
+&lt;div x-data x-doo-iconik="{ name: 'heart', size: 'md' }"&gt;&lt;/div&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="laravel">
+      <div class="install">composer require ajentik/doo-iconik</div>
+      <pre>&lt;x-doo-iconik name="heart" size="md" /&gt;
+&lt;x-doo-iconik name="star" variant="neon" animation="pulse" /&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="rails">
+      <div class="install">gem install doo_iconik</div>
+      <pre>&lt;%= doo_iconik 'heart', size: :md %&gt;
+&lt;%= doo_iconik 'star', variant: :neon, animation: :pulse %&gt;</pre>
+    </div>
+
+    <div class="usage-code" data-tab="flutter">
+      <div class="install">flutter pub add doo_iconik</div>
+      <pre>import 'package:doo_iconik/doo_iconik.dart';
+
+DooIconik(name: 'heart', size: DooIconikSize.md)
+DooIconik(name: 'star', variant: DooIconikVariant.neon)</pre>
+    </div>
+  </section>
+
   <main class="main-content">
     <div class="icon-grid" id="icon-grid"></div>
   </main>
@@ -629,6 +1057,84 @@
   </footer>
 
   <div id="toast" class="toast">Copied!</div>
+
+  <div class="preview-overlay" id="previewOverlay"></div>
+  <div class="preview-panel" id="previewPanel">
+    <div class="preview-header">
+      <h3 id="previewName">icon-name</h3>
+      <button class="preview-close" id="previewClose">&times;</button>
+    </div>
+    <div class="preview-icon-area" id="previewIconArea"></div>
+    <div class="preview-controls">
+      <div class="preview-control-row">
+        <label>Size</label>
+        <div class="preview-pills" id="previewSizes">
+          <button class="preview-pill" data-size="xs">xs</button>
+          <button class="preview-pill" data-size="sm">sm</button>
+          <button class="preview-pill active" data-size="md">md</button>
+          <button class="preview-pill" data-size="lg">lg</button>
+          <button class="preview-pill" data-size="xl">xl</button>
+          <button class="preview-pill" data-size="2xl">2xl</button>
+        </div>
+      </div>
+      <div class="preview-control-row">
+        <label>Variant</label>
+        <div class="preview-pills" id="previewVariants">
+          <button class="preview-pill active" data-variant="default">default</button>
+          <button class="preview-pill" data-variant="glow">glow</button>
+          <button class="preview-pill" data-variant="neon">neon</button>
+          <button class="preview-pill" data-variant="shadow">shadow</button>
+          <button class="preview-pill" data-variant="embossed">embossed</button>
+          <button class="preview-pill" data-variant="glass">glass</button>
+          <button class="preview-pill" data-variant="outline">outline</button>
+          <button class="preview-pill" data-variant="retro">retro</button>
+        </div>
+      </div>
+      <div class="preview-control-row">
+        <label>Animation</label>
+        <div class="preview-pills" id="previewAnimations">
+          <button class="preview-pill active" data-animation="none">none</button>
+          <button class="preview-pill" data-animation="spin">spin</button>
+          <button class="preview-pill" data-animation="pulse">pulse</button>
+          <button class="preview-pill" data-animation="bounce">bounce</button>
+          <button class="preview-pill" data-animation="wiggle">wiggle</button>
+          <button class="preview-pill" data-animation="shake">shake</button>
+          <button class="preview-pill" data-animation="float">float</button>
+          <button class="preview-pill" data-animation="heartbeat">heartbeat</button>
+          <button class="preview-pill" data-animation="tada">tada</button>
+          <button class="preview-pill" data-animation="rubber">rubber</button>
+          <button class="preview-pill" data-animation="swing">swing</button>
+          <button class="preview-pill" data-animation="jello">jello</button>
+        </div>
+      </div>
+      <div class="preview-control-row">
+        <label>Options</label>
+        <div class="preview-color-row">
+          <input type="color" class="preview-color-input" id="previewColor" value="#ffffff">
+          <div class="preview-toggles">
+            <label class="preview-toggle"><input type="checkbox" id="previewFlipH"> Flip H</label>
+            <label class="preview-toggle"><input type="checkbox" id="previewFlipV"> Flip V</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preview-snippet">
+      <div class="preview-snippet-header">
+        <div class="preview-snippet-tabs" id="previewFrameworkTabs">
+          <button class="preview-snippet-tab active" data-fw="react">React</button>
+          <button class="preview-snippet-tab" data-fw="vue">Vue</button>
+          <button class="preview-snippet-tab" data-fw="svelte">Svelte</button>
+          <button class="preview-snippet-tab" data-fw="angular">Angular</button>
+          <button class="preview-snippet-tab" data-fw="solid">Solid</button>
+          <button class="preview-snippet-tab" data-fw="laravel">Laravel</button>
+          <button class="preview-snippet-tab" data-fw="rails">Rails</button>
+          <button class="preview-snippet-tab" data-fw="flutter">Flutter</button>
+        </div>
+        <button class="preview-copy-btn" id="previewCopy">Copy</button>
+      </div>
+      <pre id="previewCode"></pre>
+    </div>
+  </div>
 
   <script>
     const state = {
@@ -670,6 +1176,7 @@
       try {
         const res = await fetch('./icon-data-raw.json');
         const data = await res.json();
+        window.iconData = data;
         state.icons = Object.entries(data).map(([name, icon]) => ({ name, ...icon }));
         state.filtered = [...state.icons];
         
@@ -752,7 +1259,7 @@
         const card = document.createElement('div');
         card.className = 'icon-card';
         card.dataset.name = icon.name;
-        card.onclick = () => copyToClipboard(icon.name);
+        card.onclick = () => openPreview(icon.name);
         
         card.innerHTML = `
           <div class="icon-wrapper" style="width: ${sizePx}px; height: ${sizePx}px;"></div>
@@ -857,6 +1364,186 @@
         console.error('Failed to copy:', err);
       });
     }
+
+    // Usage tabs
+    document.querySelectorAll('.usage-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.usage-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.usage-code').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelector(`.usage-code[data-tab="${tab.dataset.tab}"]`).classList.add('active');
+      });
+    });
+
+    // Preview Panel
+    const previewState = {
+      icon: null,
+      size: 'md',
+      variant: 'default',
+      animation: 'none',
+      color: '#ffffff',
+      flipH: false,
+      flipV: false,
+      framework: 'react'
+    };
+
+    function openPreview(iconName) {
+      previewState.icon = iconName;
+      previewState.size = 'md';
+      previewState.variant = 'default';
+      previewState.animation = 'none';
+      previewState.color = '#ffffff';
+      previewState.flipH = false;
+      previewState.flipV = false;
+      document.getElementById('previewColor').value = '#ffffff';
+      document.getElementById('previewFlipH').checked = false;
+      document.getElementById('previewFlipV').checked = false;
+      document.querySelectorAll('#previewSizes .preview-pill').forEach(p => p.classList.toggle('active', p.dataset.size === 'md'));
+      document.querySelectorAll('#previewVariants .preview-pill').forEach(p => p.classList.toggle('active', p.dataset.variant === 'default'));
+      document.querySelectorAll('#previewAnimations .preview-pill').forEach(p => p.classList.toggle('active', p.dataset.animation === 'none'));
+      document.querySelectorAll('.preview-snippet-tab').forEach(t => t.classList.toggle('active', t.dataset.fw === 'react'));
+      previewState.framework = 'react';
+      document.getElementById('previewName').textContent = iconName;
+      document.getElementById('previewOverlay').classList.add('active');
+      document.getElementById('previewPanel').classList.add('active');
+      updatePreview();
+    }
+
+    function closePreview() {
+      document.getElementById('previewOverlay').classList.remove('active');
+      document.getElementById('previewPanel').classList.remove('active');
+    }
+
+    function updatePreview() {
+      const s = previewState;
+      if (!s.icon || !window.iconData) return;
+      const icon = window.iconData[s.icon];
+      if (!icon) return;
+
+      const sizes = { xs: 12, sm: 16, md: 24, lg: 32, xl: 48, '2xl': 64 };
+      const px = sizes[s.size] || 24;
+      const classes = [];
+      if (s.variant !== 'default') classes.push('doo-iconik-' + s.variant);
+      if (s.animation !== 'none') classes.push('doo-iconik-' + s.animation);
+      if (s.flipH) classes.push('doo-iconik-flip-h');
+      if (s.flipV) classes.push('doo-iconik-flip-v');
+
+      const paths = (icon.paths || []).map(p => {
+        if (typeof p === 'string') return `<path d="${p}" fill="${s.color}" />`;
+        return `<path d="${p.d}" fill="${p.fill || s.color}" ${p.opacity ? `opacity="${p.opacity}"` : ''} />`;
+      }).join('');
+
+      const area = document.getElementById('previewIconArea');
+      area.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${icon.viewBox || '0 0 24 24'}" width="96" height="96" class="${classes.join(' ')}" aria-hidden="true">${paths}</svg>`;
+
+      updateSnippet();
+    }
+
+    function updateSnippet() {
+      const s = previewState;
+      const props = [];
+      if (s.size !== 'md') props.push(['size', s.size]);
+      if (s.variant !== 'default') props.push(['variant', s.variant]);
+      if (s.animation !== 'none') props.push(['animation', s.animation]);
+      if (s.flipH) props.push(['flipHorizontal', true]);
+      if (s.flipV) props.push(['flipVertical', true]);
+
+      let code = '';
+      const fw = s.framework;
+      const name = s.icon;
+
+      if (fw === 'react' || fw === 'vue' || fw === 'svelte' || fw === 'solid') {
+        const pkg = `@doo-iconik/${fw}`;
+        const attrs = props.map(([k,v]) => v === true ? ` ${k}` : ` ${k}="${v}"`).join('');
+        code = `import { DooIconik } from '${pkg}';\n\n<DooIconik name="${name}"${attrs} />`;
+      } else if (fw === 'angular') {
+        const attrs = props.map(([k,v]) => v === true ? ` ${k}` : ` ${k}="${v}"`).join('');
+        code = `import { DooIconikModule } from '@doo-iconik/angular';\n\n<doo-iconik name="${name}"${attrs}></doo-iconik>`;
+      } else if (fw === 'laravel') {
+        const attrs = props.map(([k,v]) => v === true ? ` ${k}` : ` ${k}="${v}"`).join('');
+        code = `<x-doo-iconik name="${name}"${attrs} />`;
+      } else if (fw === 'rails') {
+        const rubyArgs = props.map(([k,v]) => {
+          const rk = k.replace(/([A-Z])/g, '_$1').toLowerCase();
+          return v === true ? `${rk}: true` : `${rk}: :${v}`;
+        }).join(', ');
+        code = `<%= doo_iconik '${name}'${rubyArgs ? ', ' + rubyArgs : ''} %>`;
+      } else if (fw === 'flutter') {
+        const dartArgs = props.map(([k,v]) => {
+          if (v === true) return `${k}: true`;
+          if (k === 'size') return `size: DooIconikSize.${v}`;
+          if (k === 'variant') return `variant: DooIconikVariant.${v}`;
+          if (k === 'animation') return `animation: DooIconikAnimation.${v}`;
+          return `${k}: ${v}`;
+        }).join(', ');
+        code = `import 'package:doo_iconik/doo_iconik.dart';\n\nDooIconik(name: '${name}'${dartArgs ? ', ' + dartArgs : ''})`;
+      }
+
+      document.getElementById('previewCode').textContent = code;
+    }
+
+    document.getElementById('previewClose').addEventListener('click', closePreview);
+    document.getElementById('previewOverlay').addEventListener('click', closePreview);
+
+    document.querySelectorAll('#previewSizes .preview-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('#previewSizes .preview-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        previewState.size = pill.dataset.size;
+        updatePreview();
+      });
+    });
+
+    document.querySelectorAll('#previewVariants .preview-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('#previewVariants .preview-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        previewState.variant = pill.dataset.variant;
+        updatePreview();
+      });
+    });
+
+    document.querySelectorAll('#previewAnimations .preview-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('#previewAnimations .preview-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        previewState.animation = pill.dataset.animation;
+        updatePreview();
+      });
+    });
+
+    document.getElementById('previewColor').addEventListener('input', (e) => {
+      previewState.color = e.target.value;
+      updatePreview();
+    });
+
+    document.getElementById('previewFlipH').addEventListener('change', (e) => {
+      previewState.flipH = e.target.checked;
+      updatePreview();
+    });
+
+    document.getElementById('previewFlipV').addEventListener('change', (e) => {
+      previewState.flipV = e.target.checked;
+      updatePreview();
+    });
+
+    document.querySelectorAll('.preview-snippet-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.preview-snippet-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        previewState.framework = tab.dataset.fw;
+        updateSnippet();
+      });
+    });
+
+    document.getElementById('previewCopy').addEventListener('click', () => {
+      const code = document.getElementById('previewCode').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('previewCopy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 1500);
+      });
+    });
 
     init();
   </script>

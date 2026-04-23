@@ -20,7 +20,11 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs,iife --global-name DooIconikAlpine --dts"
   },
@@ -31,10 +35,20 @@
     "alpinejs": "^3.0.0"
   },
   "devDependencies": {
+    "alpinejs": "^3.15.11",
+    "jsdom": "^29.0.2",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "keywords": ["icons", "doodle", "hand-drawn", "alpine", "alpinejs", "ui", "doo-iconik"],
+  "keywords": [
+    "icons",
+    "doodle",
+    "hand-drawn",
+    "alpine",
+    "alpinejs",
+    "ui",
+    "doo-iconik"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ajentik/doo-iconik.git",

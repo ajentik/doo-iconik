@@ -8,7 +8,10 @@
   "bugs": {
     "url": "https://github.com/ajentik/doo-iconik/issues"
   },
-  "sideEffects": ["./dist/DooIconik.*", "./src/DooIconik.*"],
+  "sideEffects": [
+    "./dist/DooIconik.*",
+    "./src/DooIconik.*"
+  ],
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -20,7 +23,11 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts"
   },
@@ -31,11 +38,21 @@
     "lit": "^3.0.0"
   },
   "devDependencies": {
+    "jsdom": "^29.0.2",
     "lit": "^3.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "keywords": ["icons", "doodle", "hand-drawn", "lit", "web-components", "custom-elements", "ui", "doo-iconik"],
+  "keywords": [
+    "icons",
+    "doodle",
+    "hand-drawn",
+    "lit",
+    "web-components",
+    "custom-elements",
+    "ui",
+    "doo-iconik"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ajentik/doo-iconik.git",

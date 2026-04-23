@@ -1,0 +1,28 @@
+{
+  "name": "@ajentik/doo-iconik-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for searching and listing doo-iconik icons",
+  "license": "MIT",
+  "author": "Ajentik",
+  "type": "module",
+  "bin": {
+    "doo-iconik": "./dist/index.js"
+  },
+  "files": ["dist", "LICENSE", "README.md"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts"
+  },
+  "dependencies": {
+    "@ajentik/doo-iconik": "file:../core"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["icons", "doodle", "cli", "search", "doo-iconik"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajentik/doo-iconik.git",
+    "directory": "packages/cli"
+  }
+}

@@ -17,7 +17,11 @@
     ".": "./src/index.ts",
     "./DooIconik.vue": "./src/DooIconik.vue"
   },
-  "files": ["src", "LICENSE", "README.md"],
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "echo 'Vue package ships source — no build needed'"
   },
@@ -28,10 +32,21 @@
     "vue": "^3.3.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^29.0.2",
     "typescript": "^5.0.0",
     "vue": "^3.3.0"
   },
-  "keywords": ["icons", "doodle", "hand-drawn", "vue", "vue3", "ui", "doo-iconik"],
+  "keywords": [
+    "icons",
+    "doodle",
+    "hand-drawn",
+    "vue",
+    "vue3",
+    "ui",
+    "doo-iconik"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ajentik/doo-iconik.git",

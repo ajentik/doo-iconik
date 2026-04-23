@@ -28,8 +28,36 @@ jobs:
 
       - run: npm run build --workspace=packages/core
 
+      - name: Build all packages
+        run: npm run build --workspaces --if-present
+
       - name: Run tests
         run: npx vitest run
+
+      - name: Report bundle sizes
+        run: |
+          echo "## 📦 Bundle Sizes" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Package | Raw | Gzipped |" >> $GITHUB_STEP_SUMMARY
+          echo "|---------|-----|---------|" >> $GITHUB_STEP_SUMMARY
+          for pkg in core react vue svelte solid angular preact qwik astro lit vanilla alpine cli; do
+            DIST="packages/$pkg/dist"
+            if [ -d "$DIST" ]; then
+              MAIN=$(find "$DIST" -maxdepth 1 -name "*.js" ! -name "*.d.ts" ! -name "*.global.js" | head -1)
+              if [ -n "$MAIN" ]; then
+                RAW=$(wc -c < "$MAIN" | tr -d ' ')
+                GZ=$(gzip -c "$MAIN" | wc -c | tr -d ' ')
+                RAW_KB=$(echo "scale=1; $RAW / 1024" | bc)
+                GZ_KB=$(echo "scale=1; $GZ / 1024" | bc)
+                if [ "$pkg" = "core" ]; then
+                  PKG_NAME="@ajentik/doo-iconik"
+                else
+                  PKG_NAME="@ajentik/doo-iconik-$pkg"
+                fi
+                echo "| $PKG_NAME | ${RAW_KB}KB | ${GZ_KB}KB |" >> $GITHUB_STEP_SUMMARY
+              fi
+            fi
+          done
 
       - name: Verify icon counts match across frameworks
         run: |

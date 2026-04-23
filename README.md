@@ -314,6 +314,22 @@ import { heart } from '@ajentik/doo-iconik/icons/heart';
 import { iconData } from '@ajentik/doo-iconik';
 ```
 
+## CDN Usage
+
+Use doo-iconik without a build step via unpkg:
+
+```html
+<script src="https://unpkg.com/@ajentik/doo-iconik-vanilla/dist/index.global.js"></script>
+<script>
+  DooIconik.register();
+</script>
+
+<doo-iconik name="heart" size="lg"></doo-iconik>
+<doo-iconik name="star" variant="neon" animation="heartbeat"></doo-iconik>
+```
+
+See the [vanilla package docs](https://github.com/ajentik/doo-iconik/tree/main/packages/vanilla) for more details.
+
 ## Development
 
 ```bash

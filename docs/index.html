@@ -461,6 +461,36 @@
       color: var(--text-primary);
     }
 
+    .icon-card .copy-btn {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 24px;
+      height: 24px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      font-size: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.15s ease, background 0.15s ease;
+      z-index: 2;
+    }
+
+    .icon-card:hover .copy-btn {
+      opacity: 1;
+    }
+
+    .icon-card .copy-btn:hover {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: white;
+    }
+
     .footer {
       padding: var(--spacing-8) var(--spacing-6);
       text-align: center;
@@ -915,7 +945,7 @@
         </div>
         <div class="control-group">
           <label class="control-label">Category</label>
-          <select id="category" class="select-input">
+          <select id="category" class="select-input" style="display:none">
             <option value="all">All Categories</option>
             <option value="arrow">Arrow</option>
             <option value="currency">Currency</option>
@@ -937,6 +967,28 @@
             <option value="userinterface">User Interface</option>
             <option value="weather">Weather</option>
           </select>
+          <div class="pill-group" id="categoryChips">
+            <div class="pill active" data-category="all">All</div>
+            <div class="pill" data-category="arrow">Arrow</div>
+            <div class="pill" data-category="currency">Currency</div>
+            <div class="pill" data-category="ecommerce">E-commerce</div>
+            <div class="pill" data-category="elderlycare">Elderly Care</div>
+            <div class="pill" data-category="emojis">Emojis</div>
+            <div class="pill" data-category="files">Files</div>
+            <div class="pill" data-category="finance">Finance</div>
+            <div class="pill" data-category="food">Food</div>
+            <div class="pill" data-category="gendersymbols">Gender Symbols</div>
+            <div class="pill" data-category="handgestures">Hand Gestures</div>
+            <div class="pill" data-category="health">Health</div>
+            <div class="pill" data-category="healthcare">Healthcare</div>
+            <div class="pill" data-category="interfaces">Interfaces</div>
+            <div class="pill" data-category="logos">Logos</div>
+            <div class="pill" data-category="misc">Misc</div>
+            <div class="pill" data-category="objects">Objects</div>
+            <div class="pill" data-category="technology">Technology</div>
+            <div class="pill" data-category="userinterface">User Interface</div>
+            <div class="pill" data-category="weather">Weather</div>
+          </div>
         </div>
         <div class="control-group auto-width">
           <label class="control-label">Color</label>
@@ -1342,6 +1394,9 @@ DooIconik(name: 'star', variant: DooIconikVariant.neon)</pre>
         if (urlParams.cat && urlParams.cat !== 'all') {
           state.category = urlParams.cat;
           DOM.category.value = urlParams.cat;
+          document.querySelectorAll('#categoryChips .pill').forEach(p => {
+            p.classList.toggle('active', p.dataset.category === urlParams.cat);
+          });
         }
 
         setupEventListeners();
@@ -1431,9 +1486,17 @@ DooIconik(name: 'star', variant: DooIconikVariant.neon)</pre>
         card.onclick = () => openPreview(icon.name);
         
         card.innerHTML = `
+          <button class="copy-btn" title="Copy name" aria-label="Copy icon name ${icon.name}">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          </button>
           <div class="icon-wrapper" style="width: ${sizePx}px; height: ${sizePx}px;"></div>
           <div class="icon-name">${icon.name}</div>
         `;
+        
+        card.querySelector('.copy-btn').addEventListener('click', (e) => {
+          e.stopPropagation();
+          copyToClipboard(icon.name);
+        });
         
         fragment.appendChild(card);
         observer.observe(card);
@@ -1495,6 +1558,16 @@ DooIconik(name: 'star', variant: DooIconikVariant.neon)</pre>
       DOM.category.addEventListener('change', (e) => {
         state.category = e.target.value;
         filterIcons();
+      });
+
+      document.querySelectorAll('#categoryChips .pill').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('#categoryChips .pill').forEach(p => p.classList.remove('active'));
+          chip.classList.add('active');
+          state.category = chip.dataset.category;
+          DOM.category.value = chip.dataset.category;
+          filterIcons();
+        });
       });
       
       DOM.colorPicker.addEventListener('input', (e) => {

@@ -21,7 +21,11 @@
       "default": "./dist/index.mjs"
     }
   },
-  "files": ["dist", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts"
   },
@@ -32,10 +36,21 @@
     "solid-js": "^1.7.0"
   },
   "devDependencies": {
+    "@solidjs/testing-library": "^0.8.10",
+    "jsdom": "^29.0.2",
+    "solid-js": "^1.9.12",
     "tsup": "^8.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vite-plugin-solid": "^2.11.12"
   },
-  "keywords": ["icons", "doodle", "hand-drawn", "solid", "solidjs", "doo-iconik"],
+  "keywords": [
+    "icons",
+    "doodle",
+    "hand-drawn",
+    "solid",
+    "solidjs",
+    "doo-iconik"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ajentik/doo-iconik.git",

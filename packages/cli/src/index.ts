@@ -138,17 +138,18 @@ function main() {
         console.error('Usage: doo-iconik info <name>');
         process.exit(1);
       }
-      const info = getInfo(name);
-      if (!info) {
+      const iconInfo = getInfo(name);
+      if (!iconInfo) {
         console.error(`Icon "${name}" not found.`);
         process.exit(1);
+        return;
       }
-      console.log(`Icon: ${info.name}`);
-      console.log(`  viewBox:    ${info.viewBox}`);
-      console.log(`  paths:      ${info.pathCount}`);
-      console.log(`  circles:    ${info.circleCount}`);
-      console.log(`  lines:      ${info.lineCount}`);
-      console.log(`  type:       ${info.type}`);
+      console.log(`Icon: ${iconInfo.name}`);
+      console.log(`  viewBox:    ${iconInfo.viewBox}`);
+      console.log(`  paths:      ${iconInfo.pathCount}`);
+      console.log(`  circles:    ${iconInfo.circleCount}`);
+      console.log(`  lines:      ${iconInfo.lineCount}`);
+      console.log(`  type:       ${iconInfo.type}`);
       break;
     }
 
